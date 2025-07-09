@@ -1,0 +1,36 @@
+# Volcano Hunter .gitignore
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+.envrc
+*.env
+
+# Output and intermediate files
+ml_output/
+*.log
+*.bak
+
+# Data you don’t want exposed
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.h5
+*.nc
+*.npz
+
+# OS and IDE files
+.DS_Store
+.idea/
+.vscode/
+*.swp
