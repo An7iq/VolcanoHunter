@@ -41,20 +41,6 @@ python scripts/prepare_edc_from_edc2004.py
 ```bash
 python scripts/generate_ml_windows.py
 ```
-### **3.5 (Optional) Generate labeled windows for training**
-
-If ml_data/ml_windows_labeled.csv is missing, you can generate it using:
-
-```bash
-python scripts/extract_features_from_windows.py
-```
-
-Make sure the following input files exist:
-
-- ml_data/ml_windows_full_for_training.csv
-- volcano_catalogs/benchmark_volcano_years_full.csv
-
-This will create ml_data/ml_windows_labeled.csv with binary labels (1 = volcanic event, 0 = background).
 
 ### 4. Extract features
 
