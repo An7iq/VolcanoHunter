@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ### 2. Prepare EDC dataset
 
 ```bash
-python scripts/prepare_edc_from_edc2004.py
+python scripts/preprocess_EDC_for_ML.py
 ```
 
 ### 3. Generate ML windows
