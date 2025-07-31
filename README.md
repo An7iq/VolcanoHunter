@@ -36,6 +36,20 @@ pip install -r requirements.txt
 python scripts/preprocess_EDC_for_ML.py
 ```
 
+#### 📓 notebooks/01_EDC_data_preprocessing.ipynb
+
+This notebook processes the Wolff et al. (2010) EDC sulfate dataset and exports a cleaned, annual-resolution CSV (EDC_merged_4ML.csv) for machine learning tasks. It performs:
+	•	Column cleaning and renaming (e.g., nssSO₄)
+	•	Handling of missing years
+	•	Linear interpolation across gaps
+	•	Alignment to continuous year range
+	•	Export to CSV for ML model input
+
+Output:
+data/EDC_merged_4ML.csv
+
+🧠 Tip for beginners: If you don’t understand what a line does, read the comments in the notebook. This is the only file needed to generate ML input data from the raw Wolff dataset.
+
 ### 3. Generate ML windows
 
 ```bash
